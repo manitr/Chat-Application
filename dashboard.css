@@ -1,0 +1,143 @@
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9; 
+  }
+  
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+  
+  body{
+    height: 100vh;
+    margin: 0%;
+  }
+
+  ul{
+    height: 100%;
+    margin: 5%;   
+    padding: 0%;
+    background-color: rgb(236, 234, 234);
+    box-sizing: content-box;
+    overflow-y: scroll;
+  }
+
+  #message-list{
+    list-style-type : none;
+  }
+
+  ul li{
+    position: relative;
+    /* height: 8%; */
+    text-overflow: ellipsis;
+  }
+
+  header{
+    height: 9%;
+    /* position: fixed; */
+    width: 100%;
+    min-height: 45px;
+    display: table;
+    /* justify-content: center; align horizontal */
+    align-items: center; /* align vertical */
+    /* pa;    */
+    background-color: rgb(233, 84, 84)
+}
+
+bubble{
+  border-radius: 10px;
+  background-color: rgb(150, 230, 164); 
+}
+
+header span{
+    display: table-cell;
+    vertical-align: middle;
+    height: 90%;
+    box-sizing: border-box;
+    padding-right: 5%;
+    width: 10%;
+    text-align: right;
+    color: beige;
+    font-size: 1em;
+}
+
+header h1{
+    display: table-cell;
+    height: 90%;
+    width: 15%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    vertical-align: middle;
+    text-align: left;
+    color: beige;
+}
+
+.messages-area{
+  margin: auto;
+  padding: 0%;
+}
+
+.container {
+  position: relative;
+  /* text-align: center; */
+  height: 15%;
+  width: 80%;
+  padding-top: 2%; 
+  margin: auto;
+}
+
+message{
+  width: 60%;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+receiver, sender{
+  width: 15%;
+  display: inline-block;
+}
+
+.left{
+  text-align: start;
+}
+
+.right{
+  text-align: end;
+}
+
+.ib{
+  /* display: inline-block; */
+  display: table-cell; 
+  position: relative;
+}
+
+#info{
+  word-wrap: break-word;
+  overflow: auto 
+}

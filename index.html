@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-up | Jarvis</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css"  href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="intializations()">
+        <header>
+            <h1>Jarvis</h1>
+            <span id="cur-users"></span>
+        </header>
+        <div class="container">
+            <div class="empty-div"></div>
+
+            <div class="logIn">
+                <h2>Log In</h2>
+                <form method="get" action="dashboard.html" onsubmit="return validateUser()">
+                    <fieldset><legend>Email or Contact</legend>
+                        <input id = "li-username" type = "text" placeholder = "Email or contact" name = "username" required>
+                    </fieldset>
+                    <span id = "username-span"></span>
+                    <fieldset class="f-pass"><legend>Password:</legend> 
+                        <input id = "li-password" type = "password" placeholder = "Password" name = "password" required>
+                        <i class = "pw-eye fa fa-eye" aria-hidden="true"></i>
+                    </fieldset>
+                    <span id="password-span"></span>
+                    <button class="li-submit-btn" type="submit">Sign In</button>
+                </form>
+            </div>
+
+            <div class="signUp">
+                <h2>Sign Up</h2>
+                <form>
+                    <fieldset><legend>First name:</legend>
+                        <input id="fn" type="text" placeholder="First name" maxlength="15" required>
+                    </fieldset>
+                    <span id="fn-span"></span>
+                    <fieldset><legend>Last name:</legend>
+                        <input id="ln" type="text" placeholder="Last name" maxlength="15" required>
+                    </fieldset>
+                    <span id="ln-span"></span>
+                    <fieldset><legend>Email:</legend>
+                        <input id="email" type="email" placeholder="Email" required> 
+                    </fieldset>
+                    <span id="e-span"></span>
+                    <fieldset><legend>Contact Number:</legend>
+                        <input id="contact" type="number" placeholder="Contact" maxlength="10" minlength="10" required>
+                    </fieldset>
+                    <span id="c-span"></span>
+                    <fieldset class="f-pass"><legend>Create password:</legend>
+                        <input id="cr-pw" type="password" placeholder="Create password" required>
+                        <i class="pw-eye fa fa-eye" aria-hidden="true"></i>
+                    </fieldset>
+                    <span id="cp1-span"></span>
+                    <fieldset class="f-pass"><legend>Confirm password:</legend>
+                        <input id="cf-pw" type="password" placeholder="Confirm password" required>
+                        <i class="pw-eye fa fa-eye" aria-hidden="true"></i>
+                    </fieldset>
+                    <span id="cp2-span"></span>
+                    <button class="li-submit-btn su-btn" onclick="validateForm()">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

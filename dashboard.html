@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard | Jarvis</title>
+        <meta charset='UTF-8'>
+        <script src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel='stylesheet' href='dashboard.css'>
+    </head>
+    <body> 
+        <header style='display: table; width: 100%; height: 10%;'>
+            <h1 style='display: table-cell; width: 50%'>Jarvis</h1>
+            <span id='cur-user' style='display: table-cell; width: 50%; text-align: end'></span>
+        </header>
+        <div class='container'>
+            <div style='display: table-cell;' style='position: relative;'>
+                <div class='autocomplete ib'  >
+                    <span>To: </span><input id='input' name='receiver' type='email'  placeholder='Email..'/>
+                    <div id='to-sp'></div>
+                </div>
+                <div class='ib'>
+                    <input id='timer' type='number'  placeholder='Expire in..(minutes)'/>
+                    <div id='t-sp'></div>
+                </div>
+            </div>
+            <div class='ib'>
+                <button id='send' style='position: absolute'>Send</button>
+            </div>
+            <span style='display: table-row'> Content: </span><textarea id='info' rows='4' style='width: 100%' placeholder='Enter message here...'></textarea>
+            <div id='c-sp'></div>
+        </div>
+        <div class='messages-area' style='height: 60%;' id='refreshChat'  >
+            <ul id='message-list'></ul>
+        </div>
+        <script src='dashboard.js'></script>
+        <script>
+            autocomplete(document.getElementById('input'), users)
+        </script>   
+    </body>
+</html>

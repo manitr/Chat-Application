@@ -1,0 +1,170 @@
+header{
+    height: 9%;
+    /* position: fixed; */
+    width: 100%;
+    min-height: 45px;
+    display: table;
+    /* justify-content: center; align horizontal */
+    align-items: center; /* align vertical */
+    /* pa;    */
+    background-color: rgb(233, 84, 84)
+}
+
+header span{
+    display: table-cell;
+    vertical-align: middle;
+    height: 90%;
+    box-sizing: border-box;
+    padding-right: 5%;
+    width: 10%;
+    text-align: right;
+    color: beige;
+    font-size: 1em;
+}
+
+header h1{
+    display: table-cell;
+    height: 90%;
+    width: 15%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    vertical-align: middle;
+    text-align: left;
+    color: beige;
+}
+
+body{
+    height: 100vh;
+    margin: 0%;
+}
+
+.container {
+    position: relative;
+    /* text-align: center; */
+    height: 90%;
+    width: 60%;
+    margin: auto;
+}
+
+.logIn{
+    margin-right: 5%; 
+}
+
+.f-pass{
+    min-width: 135px;
+}
+
+.f-pass input{
+    min-width: 20px;
+}
+
+.fa-eye, .fa-eye-slash{
+    min-width: 16px;
+}
+
+.logIn, .signUp{
+    /* display: inline-block; */
+    float: left;
+    clear: none;    
+    width: 47.5%;
+    height: 75%;
+    position: relative;
+    /* border: 1px solid black; */
+    /* border-radius: 8px; */
+    padding-left: 2%;
+    box-sizing: border-box;
+    /* margin-top: 2%; */
+    min-height: 400px;
+    box-shadow:3px 3px 5px 6px #ccc; 
+}
+
+.empty-div{
+    height: 10%;
+}
+
+input{
+    border: none;
+    width: 80%;
+}
+
+.signUp h2, .logIn h2{
+    height: 10%;
+    color: rgb(204, 55, 55);
+    /* margin: 0%; */
+    margin-bottom: 0%;  
+}
+
+.signUp span{
+    height: 15px;
+    display: block;
+}
+
+.logIn span{
+    height: 25px;
+    display: block;
+}
+
+form span{
+    font-size: .7em;
+    color: red;
+}
+
+#cp1-span{
+    height: 25px;
+}
+
+fieldset{
+    height: 10%;
+    width: 40%;
+    padding: .5%;
+    /* margin: 5%; */
+    border: 1px solid rgb(102, 98, 98); 
+    border-radius: 4px; 
+    min-width: 135px;
+}
+
+
+legend{
+    display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+span{
+    display: block;
+}
+
+.li-submit-btn{
+    width: 40%;
+    height: 5%;
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+}
+
+/* .su-btn{
+    position: absolute;
+    bottom: 3%;
+} */
+
+@media only screen and (max-width: 825px) {
+    .container {
+      width: 90%;
+    }
+  }
+
+@media only screen and (max-width: 540px) {
+    fieldset {
+      width: 70%;
+    }
+    .body{
+        font-size: 1em;
+    }
+  }
+
